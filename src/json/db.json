@@ -1,28 +1,59 @@
 [
     {
         "id": 1,
-        "titulo": "O labirinto do Logcat",
-        "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img2.png",
-        "link": "https://www.youtube.com/embed/ypvGqZGJBls"
+        "titulo": "ILHA DO MEDO",
+        "capa": "https://br.web.img3.acsta.net/r_1920_1080/img/06/a3/06a3a4901ffc378b3a2b065ca15b3fbb.jpg",
+        "link": "https://www.youtube.com/embed/y3dalJDGmt0"
     },
     {
         "id": 2,
-        "titulo": "Um componente no espaço",
-        "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img1.png",
-        "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ"
+        "titulo": "Whiplash",
+        "capa": "https://br.web.img2.acsta.net/pictures/14/10/28/21/20/026440.jpg",
+        "link": "https://www.youtube.com/embed/iTgk3WbTErk"
     },
     {
         "id": 3,
-        "titulo": "O poderoso JavaScript",
-        "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img4.png",
-        "link": "https://www.youtube.com/embed/N1BSG02z-Mw"
+        "titulo": "Forrest Gump",
+        "capa": "https://br.web.img3.acsta.net/r_1920_1080/pictures/15/10/13/15/12/514297.jpg",
+        "link": "https://www.youtube.com/embed/vDY_uZAaU7g"
     },
     {
         "id": 4,
-        "titulo": "Dart, o Caçador de Andróides",
-        "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img3.png",
-        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+        "titulo": "Driver",
+        "capa": "https://ae01.alicdn.com/kf/HTB17pt3RpXXXXaZapXXq6xXFXXXE/DRIVE-Filme-Ryan-Gosling-Art-Poster-50-70-cm.jpg_Q90.jpg_.webp",
+        "link": "https://www.youtube.com/embed/KBiOF3y1W0Y"
+    },
+    {
+        "id": 5,
+        "titulo": "Akira",
+        "capa": "https://m.media-amazon.com/images/I/61cRwtDzuTL._AC_SY550_.jpg",
+        "link": "https://www.youtube.com/embed/0zKXoazRf-Y"
+    }, 
+    {
+        "id": 6,
+        "titulo": "O Profissional ",
+        "capa": "https://elfinalde.s3-accelerate.amazonaws.com/2017/08/h1Gahx1jbkOSzRzlY7D5JmmO2nK.jpg",
+         "link": "https://www.youtube.com/embed/jawVxq1Iyl0"
+    },
+    {
+        "id": 7,
+        "titulo": "Cidade de Deus ",
+        "capa": "https://upload.wikimedia.org/wikipedia/pt/1/10/CidadedeDeus.jpg",
+         "link": "https://www.youtube.com/embed/jawVxq1Iyl0"
+    },
+    {
+        "id": 7,
+        "titulo": "Era uma Vez No Oeste",
+        "capa": "https://vortexcultural.com.br/images/2010/08/Cera-una-volta-il-West_poster_goldposter_com_3.jpg",
+         "link": "https://www.youtube.com/embed/jawVxq1Iyl0"
+
     }
+    
+
+    
+         
+    
+
     
     
 ]

@@ -3,18 +3,18 @@
     margin: .5em;
     border-radius: 10px;
     background-color: var(--cinza);
-    display: grid;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 500px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
 }
 
 .capa{
     width: 100%;
-    height:50vh;
-    background-size: contain;
-   
+    height:60vh;
+    background-size: auto;
+    object-position: center;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
 }
 
 .container h2{
@@ -27,20 +27,25 @@
 
 }
 .favoritar{
+
+    float: left;
+
     width: 25px;
     transition: 1s;
+  
 }
 .favoritar:hover{
     transform: translateY(4px);
 }
-.Link{
+.link{
     text-decoration: none;
     color:var(--preto);
     text-align: left;
     transition: 0.5s;
 }
-.Link:hover{
-   transform: translateY(10px);
+.link:hover{
+   
    color: rgb(124, 124, 124);
+ 
     
 }
