@@ -9,9 +9,7 @@ import { useFavoritoContext } from '../../componentes/Contexto/favoritos';
 function Favoritos() {
     const { favorito } = useFavoritoContext();
 
-    if(favorito == []){
-        alert(`tem nada`)
-    }
+   
     return (
         <>
             <Banner imagem='favoritos' />
