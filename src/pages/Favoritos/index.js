@@ -2,21 +2,25 @@ import styles from './Favoritos.module.css';
 import Banner from "../../componentes/Banner";
 import Titulo from "../../componentes/Titulo";
 import Card from "../../componentes/Card";
-import videos from  "json/db.json";
 
-export default function Favoritos() {
+import { useFavoritoContext } from '../../componentes/Contexto/favoritos';
+
+
+function Favoritos() {
+    const { favorito } = useFavoritoContext();
     return (
         <>
-         <Banner imagem="favoritos" />
-            <Titulo><h1>Um lugar para guardar seus videos e filmes</h1></Titulo>
+            <Banner imagem='favoritos' />
+            <Titulo>
+                <h1>Meus Favoritos</h1>
+            </Titulo>
             <section className={styles.container}>
-                {videos.map((video) => {
-                    return <Card {...video} key={video.id} />
-                    
+                {favorito.map((fav) => {
+                    return <Card {...fav} key={fav.id} />
                 })}
-
             </section>
-        
         </>
     )
 }
+
+export default Favoritos;

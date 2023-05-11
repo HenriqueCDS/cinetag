@@ -7,12 +7,12 @@ export default function Cabecalho() {
     return(
         <header className={styles.cabecalho}>
             <Link to= './'>
-               <img src={logo} />
+               <img src={logo} alt="logo" />
             </Link>
             <Cabecalholink url ='./'>
                 Home
             </Cabecalholink>
-            <Cabecalholink url ='./Favoritos'>
+            <Cabecalholink url ='./favoritos'>
                 Favoritos
             </Cabecalholink>
            
