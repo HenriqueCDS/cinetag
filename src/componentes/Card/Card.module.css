@@ -1,10 +1,12 @@
 .container {
-    width: 100%;
     padding: 0 0 1em 0;
     margin: .5em;
     border-radius: 10px;
     background-color: var(--cinza);
-  
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
     
 }
 
@@ -17,7 +19,6 @@
 
 .container h2{
     text-align: center;
-
 }
 
 
