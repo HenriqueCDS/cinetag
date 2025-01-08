@@ -7,19 +7,19 @@ import videos from  "json/db.json";
 import styles from './inicio.module.css'
 export default function Inicio() {
     return(
-        <>
-           
-            <Banner imagem="home" />
-            <Titulo><h1>Um lugar que eu uso para guardar meus filmes </h1></Titulo>
-            <section className={styles.container}>
-                {videos.map((video) => {
-                    return <Card {...video} key={video.id} />
-                    
-                })}
+    
+            <section className={styles.home}>
+                <Banner imagem="home" />
+                <Titulo><h1>Um lugar que eu uso para guardar meus filmes </h1></Titulo>
+                <div className={styles.container}>
+                    {videos.map((video) => {
+                        return <Card {...video} key={video.id} />
+                        
+                    })}
 
+                </div>
             </section>
-        
-        </>
+       
     )
     
 };

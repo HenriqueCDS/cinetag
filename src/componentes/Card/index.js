@@ -11,17 +11,24 @@ function Card({ id, titulo, capa }) {
     const icone = !ehFavorito ? iconeFavoritar : iconeDesfavoritar;
     return (
         <div className={styles.container}>
-            <Link className={styles.link} to={`/${id}`}>
-                <img src={capa} alt={titulo} className={styles.capa} />
+            <div className={styles.topCard}>
+                <Link className={styles.link} to={`/${id}`}>
+                    <img src={capa} alt={titulo} className={styles.capa} />
+                </Link>
+            </div>
+
+            <div className={styles.bottomCard}>
                 <h2>{titulo}</h2>
-            </Link>
+                <img src={icone}
+                    alt="Favoritar filme"
+                    className={styles.favoritar}
+                    onClick={() => {
+                        adicionarFavorito({ id, titulo, capa })
+                    }} />
+
+            </div>
           
-            <img src={icone}
-                alt="Favoritar filme"
-                className={styles.favoritar}
-                onClick={() => {
-                    adicionarFavorito({ id, titulo, capa })
-                }} />
+           
         </div>
 
     )

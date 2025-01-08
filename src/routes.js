@@ -14,7 +14,7 @@ export default function AppRoutes() {
                         <Route index element={<Inicio />}/>
                         <Route path="favoritos" element={<Favoritos />}/>
                         <Route path=":id" element={<Player />}/>
-                        <Route path="*" element={<NotFound />}/>\
+                        <Route path="*" element={<NotFound />}/>
                     </Route>
                 </Routes>
         </BrowserRouter>

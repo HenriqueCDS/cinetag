@@ -8,9 +8,7 @@ import gifNotfound from  "./john-travolta.gif";
 export default function Inicio() {
     return(
         <>
-           
-       
-  
+
             <section  className={styles.container}>
                 <Titulo>
                     <h1>Ops!</h1>

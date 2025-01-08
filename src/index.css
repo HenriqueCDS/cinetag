@@ -5,7 +5,9 @@
   --preto:#000000;
   
 }
-
+html{
+  width: 100%;
+}
 body {
   margin: 0;
   font-family:var(--fonte);

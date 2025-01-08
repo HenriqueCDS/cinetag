@@ -14,12 +14,10 @@ export default function Player() {
 
     if(!video){
         return <NotFound />
-
-
       
     }
     return(
-        <>
+        <section className={styles.containerPlayer}> 
             <Banner imagem ="player"/>
             <Titulo>
                 <h1>Player</h1>
@@ -29,6 +27,6 @@ export default function Player() {
                 </section>
             </Titulo>
         
-        </>
+        </section>
     )
 }
