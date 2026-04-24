@@ -9,8 +9,8 @@ import style from "./stlyle.module.css";
 export default function PageBase() {
     return (
         <main className={style.main}>
-            <Cabecalho />
             <FilmesProvider>
+                <Cabecalho />
                 <FavoritosProvider>
                     <Container>
                         <Outlet />
