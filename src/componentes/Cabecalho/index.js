@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from './logo.png';
 import styles from './Cabecalho.module.css';
 import Cabecalholink from "../CabecalhoLink";
+import { useFilmesContext } from "../Contexto/filmes";
 
 function IconeMenu() {
     return (
@@ -25,6 +26,7 @@ function IconeFechar() {
 
 export default function Cabecalho() {
     const [menuAberto, setMenuAberto] = useState(false);
+    const { somenteLeitura } = useFilmesContext();
 
     return (
         <header className={styles.cabecalho}>
@@ -35,9 +37,11 @@ export default function Cabecalho() {
             <nav className={`${styles.nav} ${menuAberto ? styles.navAberto : ''}`}>
                 <Cabecalholink url='/'>Home</Cabecalholink>
                 <Cabecalholink url='/favoritos'>Favoritos</Cabecalholink>
-                <Link to='/adicionar' className={styles.linkNovo}>
-                    + Novo Filme
-                </Link>
+                {!somenteLeitura && (
+                    <Link to='/adicionar' className={styles.linkNovo}>
+                        + Novo Filme
+                    </Link>
+                )}
             </nav>
 
             <button

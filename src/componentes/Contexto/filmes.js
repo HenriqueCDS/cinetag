@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { getFilmes, postFilme, putFilme, deleteFilme } from "servicos/filmes";
+import dadosEstaticos from "json/db.json";
 
 export const FilmesContext = createContext();
 FilmesContext.displayName = "Filmes";
@@ -7,12 +8,18 @@ FilmesContext.displayName = "Filmes";
 export default function FilmesProvider({ children }) {
     const [filmes, setFilmes] = useState([]);
     const [carregando, setCarregando] = useState(true);
-    const [erroApi, setErroApi] = useState(null);
+    const [somenteLeitura, setSomenteLeitura] = useState(false);
 
     useEffect(() => {
         getFilmes()
-            .then(setFilmes)
-            .catch(() => setErroApi('Servidor offline. Execute "npm run server" em outro terminal.'))
+            .then(dados => {
+                setFilmes(dados);
+                setSomenteLeitura(false);
+            })
+            .catch(() => {
+                setFilmes(dadosEstaticos.filmes);
+                setSomenteLeitura(true);
+            })
             .finally(() => setCarregando(false));
     }, []);
 
@@ -34,7 +41,7 @@ export default function FilmesProvider({ children }) {
     }
 
     return (
-        <FilmesContext.Provider value={{ filmes, carregando, erroApi, adicionarFilme, editarFilme, removerFilme }}>
+        <FilmesContext.Provider value={{ filmes, carregando, somenteLeitura, adicionarFilme, editarFilme, removerFilme }}>
             {children}
         </FilmesContext.Provider>
     );

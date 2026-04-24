@@ -44,7 +44,7 @@ function IconeLixeira() {
 
 function Card({ id, titulo, capa }) {
     const { favorito, adicionarFavorito } = useFavoritoContext();
-    const { removerFilme } = useFilmesContext();
+    const { removerFilme, somenteLeitura } = useFilmesContext();
     const ehFavorito = favorito.some((fav) => fav.id === id);
     const [confirmando, setConfirmando] = useState(false);
 
@@ -74,16 +74,20 @@ function Card({ id, titulo, capa }) {
                 <div className={styles.bottomCard}>
                     <span className={styles.titulo}>{titulo}</span>
                     <div className={styles.acoes}>
-                        <Link to={`/editar/${id}`} className={styles.btnAcao} title="Editar">
-                            <IconeEditar />
-                        </Link>
-                        <button
-                            className={`${styles.btnAcao} ${styles.btnDeletar}`}
-                            onClick={() => setConfirmando(true)}
-                            title="Deletar"
-                        >
-                            <IconeLixeira />
-                        </button>
+                        {!somenteLeitura && (
+                            <>
+                                <Link to={`/editar/${id}`} className={styles.btnAcao} title="Editar">
+                                    <IconeEditar />
+                                </Link>
+                                <button
+                                    className={`${styles.btnAcao} ${styles.btnDeletar}`}
+                                    onClick={() => setConfirmando(true)}
+                                    title="Deletar"
+                                >
+                                    <IconeLixeira />
+                                </button>
+                            </>
+                        )}
                         <button
                             className={`${styles.btnFavoritar} ${ehFavorito ? styles.favoritado : ''}`}
                             onClick={() => adicionarFavorito({ id, titulo, capa })}
