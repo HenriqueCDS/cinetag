@@ -1,5 +1,9 @@
-.texto h1{
-    font-size: 32px;
-    font-weight: 500px;
+.texto h1 {
+    font-size: 26px;
+    font-weight: 600;
     text-align: center;
+    color: var(--texto-primario);
+    padding: 1.25rem 1rem 0.5rem;
+    margin: 0;
+    letter-spacing: 0.02em;
 }

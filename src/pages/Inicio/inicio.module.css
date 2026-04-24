@@ -1,13 +1,87 @@
-.home{
+.home {
     width: 100%;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem;
-  
+.barrabusca {
+    position: relative;
+    max-width: 480px;
+    margin: 1.25rem auto 0;
+    padding: 0 1rem;
 }
 
+.inputBusca {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border: 1.5px solid var(--borda);
+    border-radius: 8px;
+    padding: 11px 40px 11px 16px;
+    color: var(--texto-primario);
+    font-size: 15px;
+    font-family: var(--fonte);
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.inputBusca:focus {
+    border-color: var(--accent);
+}
+
+.inputBusca::placeholder {
+    color: var(--cinza);
+}
+
+.btnLimpar {
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--texto-secundario);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.btnLimpar:hover {
+    color: var(--texto-primario);
+}
+
+.mensagem {
+    text-align: center;
+    color: var(--texto-secundario);
+    padding: 2rem 1rem;
+    font-size: 15px;
+}
+
+.mensagemErro {
+    text-align: center;
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.08);
+    border: 1px solid rgba(255, 107, 107, 0.25);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    font-size: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.25rem;
+    padding: 1.25rem 2rem 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+}

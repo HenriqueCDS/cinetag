@@ -1,22 +1,33 @@
-:root{
-  --fonte: 'Montserrat', sans-serif;
-  --branco:#ffffffd3;
-  --cinza:#c7c7c7;
-  --preto:#000000;
-  
-}
-html{
-  width: 100%;
-}
-body {
-  margin: 0;
-  font-family:var(--fonte);
-  background-color: var(--branco);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --fonte: 'Montserrat', sans-serif;
+  --bg-primary: #141414;
+  --bg-secondary: #1f1f1f;
+  --bg-card: #222222;
+  --accent: #e50914;
+  --accent-hover: #f40612;
+  --texto-primario: #ffffff;
+  --texto-secundario: #a0a0a0;
+  --branco: #ffffff;
+  --cinza: #555555;
+  --preto: #000000;
+  --borda: #333333;
+  --sombra: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  background-color: var(--bg-primary);
+  color: var(--texto-primario);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -2,10 +2,14 @@
     display: flex;
     justify-content: center;
     background-color: var(--preto);
+    padding: 1.25rem 1rem;
+    margin-top: auto;
+    border-top: 1px solid var(--borda);
 }
 
 .rodape h2 {
     font-weight: 400;
-    font-size: 18px;
-    color: var(--branco);
+    font-size: 13px;
+    color: var(--texto-secundario);
+    margin: 0;
 }

@@ -2,31 +2,31 @@ import Titulo from '../../componentes/Titulo';
 import Banner from '../../componentes/Banner';
 import styles from './player.module.css';
 import { useParams } from 'react-router-dom';
-import videos from  "json/db.json";
-import NotFound from  "../NotFound";
+import NotFound from '../NotFound';
+import { useFilmesContext } from '../../componentes/Contexto/filmes';
 
 export default function Player() {
-    const params = useParams();
-    const video = videos.find((video) => {
-        return video.id === Number(params.id); 
-    })
-    console.log(video);
+    const { id } = useParams();
+    const { filmes } = useFilmesContext();
+    const video = filmes.find(v => v.id === Number(id));
 
-    if(!video){
-        return <NotFound />
-      
+    if (!video) {
+        return <NotFound />;
     }
-    return(
-        <section className={styles.containerPlayer}> 
-            <Banner imagem ="player"/>
-            <Titulo>
-                <h1>Player</h1>
-                <section  className={styles.container}>
-                <iframe  src={video.link}  title={video.Titulo} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         
-                </section>
-            </Titulo>
-        
+
+    return (
+        <section className={styles.containerPlayer}>
+            <Banner imagem="player" />
+            <Titulo><h1>{video.titulo}</h1></Titulo>
+            <div className={styles.iframeWrapper}>
+                <iframe
+                    src={video.link}
+                    title={video.titulo}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                />
+            </div>
         </section>
-    )
+    );
 }

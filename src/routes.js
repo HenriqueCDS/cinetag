@@ -1,23 +1,25 @@
 import Favoritos from "./pages/Favoritos";
 import Inicio from "./pages/Inicio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import Player from "./pages/player";
 import NotFound from "./pages/NotFound";
 import PageBase from "./pages/PageBase";
+import AdicionarFilme from "./pages/AdicionarFilme";
+import EditarFilme from "./pages/EditarFilme";
 
 export default function AppRoutes() {
-    return(
+    return (
         <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<PageBase/>}>
-                        <Route index element={<Inicio />}/>
-                        <Route path="favoritos" element={<Favoritos />}/>
-                        <Route path=":id" element={<Player />}/>
-                        <Route path="*" element={<NotFound />}/>
-                    </Route>
-                </Routes>
+            <Routes>
+                <Route path="/" element={<PageBase />}>
+                    <Route index element={<Inicio />} />
+                    <Route path="favoritos" element={<Favoritos />} />
+                    <Route path="adicionar" element={<AdicionarFilme />} />
+                    <Route path="editar/:id" element={<EditarFilme />} />
+                    <Route path=":id" element={<Player />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
         </BrowserRouter>
-    )
-    
+    );
 }

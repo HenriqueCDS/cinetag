@@ -1,68 +1,64 @@
-[
+{
+  "filmes": [
     {
-        "id": 1,
-        "titulo": "ILHA DO MEDO",
-        "capa": "https://br.web.img3.acsta.net/r_1920_1080/img/06/a3/06a3a4901ffc378b3a2b065ca15b3fbb.jpg",
-        "link": "https://www.youtube.com/embed/gL4rP2prdfg"
-        
+      "id": 1,
+      "titulo": "Ilha do medo",
+      "capa": "https://br.web.img3.acsta.net/r_1920_1080/img/06/a3/06a3a4901ffc378b3a2b065ca15b3fbb.jpg",
+      "link": "https://www.youtube.com/embed/gL4rP2prdfg"
     },
     {
-        "id": 2,
-        "titulo": "Whiplash",
-        "capa": "https://br.web.img2.acsta.net/pictures/14/10/28/21/20/026440.jpg",
-        "link": "https://www.youtube.com/embed/iTgk3WbTErk"
+      "id": 2,
+      "titulo": "Whiplash",
+      "capa": "https://br.web.img2.acsta.net/pictures/14/10/28/21/20/026440.jpg",
+      "link": "https://www.youtube.com/embed/iTgk3WbTErk"
     },
     {
-        "id": 3,
-        "titulo": "Forrest Gump",
-        "capa": "https://br.web.img3.acsta.net/r_1920_1080/pictures/15/10/13/15/12/514297.jpg",
-        "link": "https://www.youtube.com/embed/vDY_uZAaU7g"
+      "id": 3,
+      "titulo": "Forrest Gump",
+      "capa": "https://br.web.img3.acsta.net/r_1920_1080/pictures/15/10/13/15/12/514297.jpg",
+      "link": "https://www.youtube.com/embed/vDY_uZAaU7g"
     },
     {
-        "id": 4,
-        "titulo": "Driver",
-        "capa": "https://ae01.alicdn.com/kf/HTB17pt3RpXXXXaZapXXq6xXFXXXE/DRIVE-Filme-Ryan-Gosling-Art-Poster-50-70-cm.jpg_Q90.jpg_.webp",
-        "link": "https://www.youtube.com/embed/KBiOF3y1W0Y"
+      "id": 4,
+      "titulo": "Drive",
+      "capa": "https://ae01.alicdn.com/kf/HTB17pt3RpXXXXaZapXXq6xXFXXXE/DRIVE-Filme-Ryan-Gosling-Art-Poster-50-70-cm.jpg_Q90.jpg_.webp",
+      "link": "https://www.youtube.com/embed/KBiOF3y1W0Y"
     },
     {
-        "id": 5,
-        "titulo": "Akira",
-        "capa": "https://m.media-amazon.com/images/I/61cRwtDzuTL._AC_SY550_.jpg",
-        "link": "https://www.youtube.com/embed/0zKXoazRf-Y"
-    }, 
-    {
-        "id": 6,
-        "titulo": "O Profissional ",
-        "capa": "https://elfinalde.s3-accelerate.amazonaws.com/2017/08/h1Gahx1jbkOSzRzlY7D5JmmO2nK.jpg",
-         "link": "https://www.youtube.com/embed/jawVxq1Iyl0"
+      "id": 5,
+      "titulo": "Akira",
+      "capa": "https://m.media-amazon.com/images/I/61cRwtDzuTL._AC_SY550_.jpg",
+      "link": "https://www.youtube.com/embed/0zKXoazRf-Y"
     },
     {
-        "id": 7,
-        "titulo": "Cidade de Deus ",
-        "capa": "https://upload.wikimedia.org/wikipedia/pt/1/10/CidadedeDeus.jpg",
-         "link": "https://www.youtube.com/embed/fZJUKixyeXM"
+      "id": 6,
+      "titulo": "O Profissional",
+      "capa": "https://elfinalde.s3-accelerate.amazonaws.com/2017/08/h1Gahx1jbkOSzRzlY7D5JmmO2nK.jpg",
+      "link": "https://www.youtube.com/embed/jawVxq1Iyl0"
     },
     {
-        "id": 8,
-        "titulo": "interestelar",
-        "capa": "https://i.pinimg.com/564x/a9/99/b6/a999b676132d88b2d82ad7bfc44ca382.jpg",
-         "link": "https://www.youtube.com/embed/mbbPSq63yuM"
-
+      "id": 7,
+      "titulo": "Cidade de Deus",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/1/10/CidadedeDeus.jpg",
+      "link": "https://www.youtube.com/embed/fZJUKixyeXM"
     },
     {
-        "id": 9,
-        "titulo": "Click",
-        "capa": "https://m.media-amazon.com/images/I/51JM5CyGAVL._AC_.jpg",
-         "link": "https://www.youtube.com/embed/zZNC5emNyEQ"
-
+      "id": 9,
+      "titulo": "Click",
+      "capa": "https://m.media-amazon.com/images/I/51JM5CyGAVL._AC_.jpg",
+      "link": "https://www.youtube.com/embed/zZNC5emNyEQ"
+    },
+    {
+      "titulo": "Devorador de Estrelas",
+      "capa": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-Mk2VvbkbBVJD7zy-hcgmqzNNBx82kIA3VP-jBMIgmoBOc8r0",
+      "link": "https://www.youtube.com/embed/uI1KofmBtYI",
+      "id": 10
+    },
+    {
+      "titulo": "Entrevista com o Demônio",
+      "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbj6EPW5Iix6UZ_u1kB3JXvVSL1fOoQA_yuKsjXM-jh48DtFbx",
+      "link": "https://www.youtube.com/embed/R9Pv_3pH64I",
+      "id": 11
     }
-    
-    
-
-    
-         
-    
-
-    
-    
-]
+  ]
+}
